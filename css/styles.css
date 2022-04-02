@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Bebas+Neue&display=swap');
+
+*{
+    Margin:0;
+    padding:0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: table;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 0.25fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+}
+
+main{
+    margin-top: 4%;
+    margin-left: 4%;
+    grid-area: main;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    text-align: center;
+    grid-area: header;
+    padding-bottom: 20px;
+}
+
+footer{
+        background-color:black;
+        padding: 0px 0px;
+        width: 100%;
+        display: table-row;
+        grid-area: footer;
+}
+
+footer h1{
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size:20px;
+    text-align: center;
+}
+
+table, td, th {
+    border-collapse: collapse;
+    border: 1px solid;
+    padding: 5px;
+    border-color: gray;
+}
+
+form label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+aside{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    font-family: 'Asap', sans-serif;
+    border-left: 2px solid #D3D3D3;
+    border-top: 2px solid #D3D3D3;
+    grid-area: aside;
+}
+
+.akiraLogo{
+    width: 90px;
+    filter: invert(1);
+    margin: 5px 0px;
+}
+
+.sectionPrincipal article{
+    padding: 60px;
+    font-family: 'Asap', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 15px;
+}
+
+.tituloSection{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 45px;
+}
+
+.subtituloSection{
+    font-family: 'Bebas Neue', cursive;
+    padding-left: 20px;
+    border-bottom: 2px solid #D3D3D3;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.menu ul{
+    background-color: black;
+    border-left: 6px solid black;
+    border-right: 6px solid black;
+    border-bottom:6px solid black;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: min-content;
+    list-style-type: none;
+    gap: 5px;
+}
+
+.menu ul li{
+    background-color: grey;
+}
+
+.menu ul li a{
+    padding: 0px 40px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size:20px;
+    border-right: 1px solid black ;
+    border-left: 0px solid black ;
+}
+
+.menu ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+.menuMobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menuMobile ul{
+    border-left: 6px solid black;
+    border-right: 6px solid black;
+    border-bottom:6px solid black;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size:20px;
+    padding: 5px 15px;
+    background-color: gray;
+    display: none;
+    width: 90px;
+}
+
+.menuMobile ul li{
+    margin-top: 15px;
+}
+
+.menuMobile ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size:20px;
+    width: 100%;
+    display: block;
+}
+
+.biografia{
+    font-family: 'Asap', sans-serif;
+}
+
+.biografia p{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.buttonForm{
+    margin-top: 15px;
+    display: block;
+}
+
+.imgFrame{
+    width: 55%;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid gray;
+}
+
+.logoHeader{
+    background-color: black;
+}
+
+.frase img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.frase q{
+    font-size: 14px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.frase h1{
+    margin-top: 15px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.separador{
+    border-bottom: 2px solid #D3D3D3;
+    margin: 20px 0px;
+}
+
+.publicidad img{
+    width: 100%;
+    height: 430px;
+}
+
+#elementoSelect{
+    background-color: white;
+    color: black;
+}
+
+.videoPrincipal {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 472.5px;
+}
+
+#tablaFilmografia{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 769px) {
+ 
+    .videoPrincipal{
+        height: 262.5px;
+    }
+
+    .menu ul{
+        background-color: black;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom:6px solid black;        
+        border-radius: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        list-style-type: none;
+        gap: 5px;
+    }
+
+    .menu ul li{
+        border-radius: 3px 3px 3px 3px;
+    }
+
+    #elementoSelect{
+        border-radius: 3px 3px 3px 3px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    body{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+
+    aside{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menuMobile ul{
+        display: inline-block;
+    }
+
+    .menuMobile ul li{
+        display: none;
+    }
+
+    .menuMobile ul:hover >li{
+        display: block;
+    }
+
+    .imgFrame{
+        width: 100%;
+    }
+    
+    main{
+        margin-top: 10%;
+    }
+
+    .videoPrincipal{
+        width: 100%;
+        height: 157.5px;
+    }
+}
+
+
+
+
