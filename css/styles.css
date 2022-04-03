@@ -261,6 +261,11 @@ aside {
     margin-right: auto;
 }
 
+/* 
+- Se ajuste video y header reduciendo el tamaño del logo.
+- Se ajusta el menu del sitio para version table.
+- Se quita publicidad.
+*/
 @media screen and (max-width: 769px) {
 
     .videoPrincipal {
@@ -293,8 +298,24 @@ aside {
         width: 80px;
     }
 
+    .imgFrame {
+        width: 100%;
+    }
+
+    .publicidad {
+        display: none;
+    }
+
+    .separador{
+        display: none;
+    }
 }
 
+/* 
+- Se cambia el menu por una version mobile.
+- Se quita el aside de frases y publicidad.
+- Ajustes para visualizar mejor textos, imagenes y videos.
+*/
 @media screen and (max-width: 426px) {
     body {
         grid-template-columns: 1fr;
@@ -349,5 +370,9 @@ aside {
 
     .sectionPrincipal {
         margin-left: 4%;
+    }
+
+    .sectionPrincipal article {
+        padding: 30px;
     }
 }
