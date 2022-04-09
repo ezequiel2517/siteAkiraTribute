@@ -53,15 +53,6 @@ footer {
     grid-area: footer;
 }
 
-footer h1 {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
-    text-align: center;
-}
-
 table,
 td,
 th {
@@ -86,6 +77,15 @@ aside {
     border-top: 2px solid #D3D3D3;
     grid-area: aside;
     animation: transictionIn 0.5s;
+}
+
+.textFooter {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-align: center;
 }
 
 .akiraLogo {
