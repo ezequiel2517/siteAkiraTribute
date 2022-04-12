@@ -5,13 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap v5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/png" href="../images/akiraLogo.png">
     <title>Kurosawa Tribute | Biografía</title>
 </head>
 
-<body>
-    <header>
+<body class="container-fluid">
+    <header class="row sticky-top">
         <!-- logo del sitio -->
         <div class="logoHeader">
             <a href="../index.html">
@@ -25,7 +34,7 @@
                 <li><a href="filmografia.html">Filmografía</a></li>
                 <li><a href="fotogramas.html">Fotogramas</a></li>
                 <!-- se marca elemento seleccionado -->
-                <li><a href="biografia.html" id="elementoSelect">Biografía</a></li>
+                <li id="elementoSelect"><a href="biografia.html">Biografía</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
@@ -43,97 +52,122 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="sectionPrincipal">
-            <h1 class="tituloSection">Biografía</h1>
-            <h2 class="subtituloSection">Conociendo un poco más al genio japonés.</h2>
-            <article class="biografia">
-                <p>
-                    Akira Kurosawa, el más conocido de los directores de cine japonés, nació en el distrito Omori de
-                    Tokio el 23 de marzo de 1910. Era el menor de siete hermanos de una acomodada familia de
-                    comerciantes de Osaka. Su familia era descendiente de una línea de antiguos samuráis. Hasta 1921
-                    Kurosawa realiza sus primeros estudios, mostrando un especial interés por el mundo de la pintura.
-                    Desde muy pequeño se movió en un ambiente cultural, ya que tanto su padre como su hermano mayor le
-                    llevaban al cine, le leían novelas y le hacían que se interesase por la cultura.
-                </p>
-                <p>
-                    En 1922 Akira comenzó sus estudios de bachillerato en el Instituo Keika. Un año después sería
-                    testigo de un hecho que le marcaría mucho, el gran terremoto de Kantó, que produjo un gran número de
-                    víctimas, y del cual Akira y su hermano fueron testigos directos, ya que el Instituto de Keika
-                    también fue destruido. En 1927 finaliza el bachillerato, y en vez de matricularse en la Escuela de
-                    Bellas Artes, prefiere elegir una formación menos académica y más libre. En estos años, Akira
-                    continúa con su afición a la pintura, y además empieza a interesarse cada vez más por la literatura,
-                    el teatro, y el cine. Comienza a descubrir el cine europeo del que se siente un gran admirador,
-                    Charles Chaplin, Buster Keaton o De Mille son algunos de sus directores favoritos.
-                </p>
-                <p>
-                    En 1929 decidió unirse a la Liga de Artistas Proletarios, sin embargo, dos años más tarde y
-                    desilusionado de este grupo, decide comprometerse con organizaciones políticas más radicales. Este
-                    entusiasmo le duraría poco, ya que en la primavera de 1932 decide abandonar el movimiento
-                    proletario. Cuando Akira cumplió 23 años sufre uno de los hechos más traumáticos de su vida, el
-                    suicidio de su hermano mayor, y cuatro meses después la muerte de otro de sus hermanos.
-                </p>
-                <p>
-                    Durante estos años continúa con su afición a la pintura, pero sus dudas acerca de su talento hacen
-                    que la abandone poco a poco.
-                    En 1936 el cineasta japonés se apunta en un programa de aprendices de director en los estudios
-                    Nikkatsu. Allí comenzará a trabajar como ayudante del director Kajiro Yamamoto. Durante estos años
-                    se dedicará a aprender, a escribir guiones y a dirigir su primera película.
-                    En 1943 debutó como director con la película Sanshiro Sugata (La leyenda del gran judo). Sus
-                    siguientes películas fueron supervisadas por el gobierno japonés, Ichiban utsukushika (La más bella,
-                    1944), Zoku Sugata Sanshiro, Tora no o wo fumu otokotachi (1945), Waga seishum ni kuinashi (No añoro
-                    mi juventud, 1946), Yoidore tenshi (El ángel borracho, 1949) o Nora inu (El perro rabioso, 1949).
-                </p>
-                <p>
-                    En 1950 rodaría Rashomon, una película que cambiará su vida, ya que gracias a ella sería conocido
-                    internacionalmente. Ganó el León de Oro en el Festival de cine de Venecia del año 1951. Este sería
-                    el principio de una serie de reconocimientos a nivel internacional, ya que cuatro años después Ikiru
-                    (Vivir) recibirá el Premio del Jurado en el Festival de Berlín de 1954. En esta década de los
-                    cincuenta rodará películas tan conocidas como Los siete samuráis (1954), El trono de sangre (1957) o
-                    La fortaleza escondida (1958).
-                </p>
-                <p>
-                    Akira Kurosawa inicia la década de los sesenta con la película Los canallas duermen en paz, en donde
-                    analizaba el problema de la corrupción. Sus siguientes trabajos fueron Mercenario (1961), Tsubaki
-                    Sanjuro (1962), Infierno de odio (1963) y Barbarroja (1965).
-                </p>
-                <p>
-                    Durante los siguientes años Kurosawa tendrá problemas para trabajar, y de hecho hasta 1970 no
-                    rodaría ninguna película. Ante esta problemática, el director fundará su propia productora llamada
-                    Yonki no kai junto a otros compañeros. Con ella rodará su siguiente trabajo Dode'ska-den (1970). El
-                    inicio de la década de los setenta no fue bueno para Akira, ya que los periódicos publicaron que
-                    había sufrido un intento de suicidio. Nuevamente Kurosawa estará durante cinco años inactivo hasta
-                    que en 1975 vuelve al trabajo con su película Dersu Uzala, con la que consiguió el Oscar de la
-                    Academia de Hollywood.
-                </p>
-                <p>
-                    En la década de los ochenta rodó Kagemusha (1980) y Ran (1985). Ya en los noventa rodó Los sueños de
-                    Akira Kurosawa, y, además, fue galardonado por la Academia de Hollywood con un Oscar honorífico a
-                    toda su carrera. Sus siguientes trabajos fueron Rapsodia en Agosto (Hachigatsu no Rhapsody, 1991), y
-                    Madadayo (1993). Akira Kurosawa murió en Shinjitai el 6 de septiembre de 1998.
-                </p>
-            </article>
-        </section>
-    </main>
-    <aside>
-        <div class="frase">
-            <img src="../images/akira_aside_04.jpg" alt="akira_aside_01">
-            <q>
-                Pero la ignorancia es una especie de locura en el animal humano. Las personas que se deleitan en la
-                tortura de niños indefensos están realmente locas. Lo terrible es que las personas que están locas en
-                privado pueden usar una expresión suave e inocente en público.
-            </q>
-            <h1>Akira Kurosawa</h1>
-        </div>
-        <div class="separador">
+    <div class="row">
+        <main class="col-lg-10 col-md-10 col-sm-12">
+            <section class="sectionPrincipal">
+                <h1 class="tituloSection">Biografía</h1>
+                <h2 class="subtituloSection">Conociendo un poco más al genio japonés.</h2>
+                <article class="biografia">
+                    <p>
+                        Akira Kurosawa, el más conocido de los directores de cine japonés, nació en el distrito Omori de
+                        Tokio el 23 de marzo de 1910. Era el menor de siete hermanos de una acomodada familia de
+                        comerciantes de Osaka. Su familia era descendiente de una línea de antiguos samuráis. Hasta 1921
+                        Kurosawa realiza sus primeros estudios, mostrando un especial interés por el mundo de la
+                        pintura.
+                        Desde muy pequeño se movió en un ambiente cultural, ya que tanto su padre como su hermano mayor
+                        le
+                        llevaban al cine, le leían novelas y le hacían que se interesase por la cultura.
+                    </p>
+                    <p>
+                        En 1922 Akira comenzó sus estudios de bachillerato en el Instituo Keika. Un año después sería
+                        testigo de un hecho que le marcaría mucho, el gran terremoto de Kantó, que produjo un gran
+                        número de
+                        víctimas, y del cual Akira y su hermano fueron testigos directos, ya que el Instituto de Keika
+                        también fue destruido. En 1927 finaliza el bachillerato, y en vez de matricularse en la Escuela
+                        de
+                        Bellas Artes, prefiere elegir una formación menos académica y más libre. En estos años, Akira
+                        continúa con su afición a la pintura, y además empieza a interesarse cada vez más por la
+                        literatura,
+                        el teatro, y el cine. Comienza a descubrir el cine europeo del que se siente un gran admirador,
+                        Charles Chaplin, Buster Keaton o De Mille son algunos de sus directores favoritos.
+                    </p>
+                    <p>
+                        En 1929 decidió unirse a la Liga de Artistas Proletarios, sin embargo, dos años más tarde y
+                        desilusionado de este grupo, decide comprometerse con organizaciones políticas más radicales.
+                        Este
+                        entusiasmo le duraría poco, ya que en la primavera de 1932 decide abandonar el movimiento
+                        proletario. Cuando Akira cumplió 23 años sufre uno de los hechos más traumáticos de su vida, el
+                        suicidio de su hermano mayor, y cuatro meses después la muerte de otro de sus hermanos.
+                    </p>
+                    <p>
+                        Durante estos años continúa con su afición a la pintura, pero sus dudas acerca de su talento
+                        hacen
+                        que la abandone poco a poco.
+                        En 1936 el cineasta japonés se apunta en un programa de aprendices de director en los estudios
+                        Nikkatsu. Allí comenzará a trabajar como ayudante del director Kajiro Yamamoto. Durante estos
+                        años
+                        se dedicará a aprender, a escribir guiones y a dirigir su primera película.
+                        En 1943 debutó como director con la película Sanshiro Sugata (La leyenda del gran judo). Sus
+                        siguientes películas fueron supervisadas por el gobierno japonés, Ichiban utsukushika (La más
+                        bella,
+                        1944), Zoku Sugata Sanshiro, Tora no o wo fumu otokotachi (1945), Waga seishum ni kuinashi (No
+                        añoro
+                        mi juventud, 1946), Yoidore tenshi (El ángel borracho, 1949) o Nora inu (El perro rabioso,
+                        1949).
+                    </p>
+                    <p>
+                        En 1950 rodaría Rashomon, una película que cambiará su vida, ya que gracias a ella sería
+                        conocido
+                        internacionalmente. Ganó el León de Oro en el Festival de cine de Venecia del año 1951. Este
+                        sería
+                        el principio de una serie de reconocimientos a nivel internacional, ya que cuatro años después
+                        Ikiru
+                        (Vivir) recibirá el Premio del Jurado en el Festival de Berlín de 1954. En esta década de los
+                        cincuenta rodará películas tan conocidas como Los siete samuráis (1954), El trono de sangre
+                        (1957) o
+                        La fortaleza escondida (1958).
+                    </p>
+                    <p>
+                        Akira Kurosawa inicia la década de los sesenta con la película Los canallas duermen en paz, en
+                        donde
+                        analizaba el problema de la corrupción. Sus siguientes trabajos fueron Mercenario (1961),
+                        Tsubaki
+                        Sanjuro (1962), Infierno de odio (1963) y Barbarroja (1965).
+                    </p>
+                    <p>
+                        Durante los siguientes años Kurosawa tendrá problemas para trabajar, y de hecho hasta 1970 no
+                        rodaría ninguna película. Ante esta problemática, el director fundará su propia productora
+                        llamada
+                        Yonki no kai junto a otros compañeros. Con ella rodará su siguiente trabajo Dode'ska-den (1970).
+                        El
+                        inicio de la década de los setenta no fue bueno para Akira, ya que los periódicos publicaron que
+                        había sufrido un intento de suicidio. Nuevamente Kurosawa estará durante cinco años inactivo
+                        hasta
+                        que en 1975 vuelve al trabajo con su película Dersu Uzala, con la que consiguió el Oscar de la
+                        Academia de Hollywood.
+                    </p>
+                    <p>
+                        En la década de los ochenta rodó Kagemusha (1980) y Ran (1985). Ya en los noventa rodó Los
+                        sueños de
+                        Akira Kurosawa, y, además, fue galardonado por la Academia de Hollywood con un Oscar honorífico
+                        a
+                        toda su carrera. Sus siguientes trabajos fueron Rapsodia en Agosto (Hachigatsu no Rhapsody,
+                        1991), y
+                        Madadayo (1993). Akira Kurosawa murió en Shinjitai el 6 de septiembre de 1998.
+                    </p>
+                </article>
+            </section>
+        </main>
+        <aside class="col-lg-2 col-md-2 col-sm-0">
+            <div class="frase">
+                <img src="../images/akira_aside_04.jpg" alt="akira_aside_01">
+                <q>
+                    Pero la ignorancia es una especie de locura en el animal humano. Las personas que se deleitan en la
+                    tortura de niños indefensos están realmente locas. Lo terrible es que las personas que están locas
+                    en
+                    privado pueden usar una expresión suave e inocente en público.
+                </q>
+                <h1>Akira Kurosawa</h1>
+            </div>
+            <div class="separador">
 
-        </div>
-        <div class="publicidad">
-            <img src="../images/publicidad_05.gif" alt="akira_aside_01">
-        </div>
-
-    </aside>
-    <footer>
+            </div>
+            <div class="publicidad">
+                <img src="../images/publicidad_05.gif" alt="akira_aside_01">
+            </div>
+        </aside>
+    </div>
+    <footer class="row">
         <div class="textFooter">© 2022 Kurosawa Tribute All rights reserved.</div>
     </footer>
 </body>

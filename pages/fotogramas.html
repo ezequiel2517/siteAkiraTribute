@@ -5,15 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap v5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/png" href="../images/akiraLogo.png">
     <title>Kurosawa Tribute | Quienes somos?</title>
 </head>
 
-<body>
-    <header>
+<body class="container-fluid">
+    <header class="row sticky-top">
         <!-- logo del sitio -->
-        <div class="logoHeader">
+        <div class=" logoHeader">
             <a href="../index.html">
                 <img src="../images/akiraLogo.png" alt="logo" class="akiraLogo">
             </a>
@@ -24,7 +33,7 @@
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="filmografia.html">Filmografía</a></li>
                 <!-- se marca elemento seleccionado -->
-                <li><a href="fotogramas.html" id="elementoSelect">Fotogramas</a></li>
+                <li id="elementoSelect"><a href="fotogramas.html">Fotogramas</a></li>
                 <li><a href="biografia.html">Biografía</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
@@ -43,100 +52,105 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <!-- encabezado section principal -->
-        <section class="sectionPrincipal">
-            <h1 class="tituloSection">Fotogramas</h1>
-            <h2 class="subtituloSection">Para empaparse del arte de Akira.</h2>
-            <article>
-                <div class="gFotogramas">
-                    <div class="gFotogramas-item">
-                        <div class="gFotogramas-item-min" tabindex="1">
-                            <img src="../images/imgFrame_01.jpg" />
+    <div class="row">
+        <main class="col-lg-10 col-md-10 col-sm-12">
+            <!-- encabezado section principal -->
+            <section class="sectionPrincipal">
+                <h1 class="tituloSection">Fotogramas</h1>
+                <h2 class="subtituloSection">Para empaparse del arte de Akira.</h2>
+                <article>
+                    <div class="gFotogramas">
+                        <div class="gFotogramas-item">
+                            <div class="gFotogramas-item-min" tabindex="1">
+                                <img src="../images/imgFrame_01.jpg" />
+                            </div>
+                            <div class="gFotogramas-item-max">
+                                <img src="../images/imgFrame_02.jpg" />
+                            </div>
                         </div>
-                        <div class="gFotogramas-item-max">
-                            <img src="../images/imgFrame_02.jpg" />
+                        <div class="gFotogramas-item">
+                            <div class="gFotogramas-item-min" tabindex="1">
+                                <img src="../images/imgFrame_02.jpg" />
+                            </div>
+                            <div class="gFotogramas-item-max">
+                                <img src="../images/imgFrame_02.jpg" />
+                            </div>
+                        </div>
+                        <div class="gFotogramas-item">
+                            <div class="gFotogramas-item-min" tabindex="1">
+                                <img src="../images/imgFrame_03.jpg" />
+                            </div>
+                            <div class="gFotogramas-item-max">
+                                <img src="../images/imgFrame_03.jpg" />
+                            </div>
+                        </div>
+                        <div class="gFotogramas-item">
+                            <div class="gFotogramas-item-min" tabindex="1">
+                                <img src="../images/imgFrame_04.jpg" />
+                            </div>
+                            <div class="gFotogramas-item-max">
+                                <img src="../images/imgFrame_04.jpg" />
+                            </div>
+                        </div>
+                        <div class="gFotogramas-item">
+                            <div class="gFotogramas-item-min" tabindex="1">
+                                <img src="../images/imgFrame_05.jpg" />
+                            </div>
+                            <div class="gFotogramas-item-max">
+                                <img src="../images/imgFrame_05.jpg" />
+                            </div>
+                        </div>
+                        <div class="gFotogramas-item">
+                            <div class="gFotogramas-item-min" tabindex="1">
+                                <img src="../images/imgFrame_06.jpg" />
+                            </div>
+                            <div class="gFotogramas-item-max">
+                                <img src="../images/imgFrame_06.jpg" />
+                            </div>
+                        </div>
+                        <div class="gFotogramas-item">
+                            <div class="gFotogramas-item-min" tabindex="1">
+                                <img src="../images/imgFrame_07.jpg" />
+                            </div>
+                            <div class="gFotogramas-item-max">
+                                <img src="../images/imgFrame_07.jpg" />
+                            </div>
+                        </div>
+                        <div class="gFotogramas-item">
+                            <div class="gFotogramas-item-min" tabindex="1">
+                                <img src="../images/imgFrame_08.jpg" />
+                            </div>
+                            <div class="gFotogramas-item-max">
+                                <img src="../images/imgFrame_08.jpg" />
+                            </div>
                         </div>
                     </div>
-                    <div class="gFotogramas-item">
-                        <div class="gFotogramas-item-min" tabindex="1">
-                            <img src="../images/imgFrame_02.jpg" />
-                        </div>
-                        <div class="gFotogramas-item-max">
-                            <img src="../images/imgFrame_02.jpg" />
-                        </div>
-                    </div>
-                    <div class="gFotogramas-item">
-                        <div class="gFotogramas-item-min" tabindex="1">
-                            <img src="../images/imgFrame_03.jpg" />
-                        </div>
-                        <div class="gFotogramas-item-max">
-                            <img src="../images/imgFrame_03.jpg" />
-                        </div>
-                    </div>
-                    <div class="gFotogramas-item">
-                        <div class="gFotogramas-item-min" tabindex="1">
-                            <img src="../images/imgFrame_04.jpg" />
-                        </div>
-                        <div class="gFotogramas-item-max">
-                            <img src="../images/imgFrame_04.jpg" />
-                        </div>
-                    </div>
-                    <div class="gFotogramas-item">
-                        <div class="gFotogramas-item-min" tabindex="1">
-                            <img src="../images/imgFrame_05.jpg" />
-                        </div>
-                        <div class="gFotogramas-item-max">
-                            <img src="../images/imgFrame_05.jpg" />
-                        </div>
-                    </div>
-                    <div class="gFotogramas-item">
-                        <div class="gFotogramas-item-min" tabindex="1">
-                            <img src="../images/imgFrame_06.jpg" />
-                        </div>
-                        <div class="gFotogramas-item-max">
-                            <img src="../images/imgFrame_06.jpg" />
-                        </div>
-                    </div>
-                    <div class="gFotogramas-item">
-                        <div class="gFotogramas-item-min" tabindex="1">
-                            <img src="../images/imgFrame_07.jpg" />
-                        </div>
-                        <div class="gFotogramas-item-max">
-                            <img src="../images/imgFrame_07.jpg" />
-                        </div>
-                    </div>
-                    <div class="gFotogramas-item">
-                        <div class="gFotogramas-item-min" tabindex="1">
-                            <img src="../images/imgFrame_08.jpg" />
-                        </div>
-                        <div class="gFotogramas-item-max">
-                            <img src="../images/imgFrame_08.jpg" />
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-    </main>
-    <aside>
-        <div class="frase">
-            <img src="../images/akira_aside_03.jpg" alt="akira_aside_02">
-            <q>
-                Directores de cine, o mejor dicho, las personas que crean cosas, son muy codiciosos y nunca pueden estar
-                satisfechos. Es por eso que se puede seguir trabajando. He sido capaz de trabajar durante tanto tiempo,
-                porque creo que la próxima vez, voy a hacer algo bueno.
-            </q>
-            <h1>Akira Kurosawa</h1>
-        </div>
-        <div class="separador">
+                </article>
+            </section>
+        </main>
+        <aside class="col-lg-2 col-md-2 col-sm-0">
+            <div class="frase">
+                <img src="../images/akira_aside_03.jpg" alt="akira_aside_02">
+                <q>
+                    Directores de cine, o mejor dicho, las personas que crean cosas, son muy codiciosos y nunca pueden
+                    estar
+                    satisfechos. Es por eso que se puede seguir trabajando. He sido capaz de trabajar durante tanto
+                    tiempo,
+                    porque creo que la próxima vez, voy a hacer algo bueno.
+                </q>
+                <h1>Akira Kurosawa</h1>
+            </div>
+            <div class="separador">
 
-        </div>
-        <div class="publicidad">
-            <img src="../images/publicidad_03.gif" alt="publicidad">
-        </div>
+            </div>
+            <div class="publicidad">
+                <img src="../images/publicidad_03.gif" alt="publicidad">
+            </div>
 
-    </aside>
-    <footer>
+        </aside>
+    </div>
+
+    <footer class="row">
         <div class="textFooter">© 2022 Kurosawa Tribute All rights reserved.</div>
     </footer>
 </body>
