@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: table;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    grid-area: main;
+    animation: transictionIn 0.5s;
+    padding-right:  0px !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    grid-area: header;
+    padding-bottom: 20px;
+    z-index: 1000 !important;
+}
+
+footer {
+    background-color: black;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: auto !important;
+
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+aside {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Asap', sans-serif;
+    border-left: 2px solid #D3D3D3;
+    border-top: 2px solid #D3D3D3;
+    grid-area: aside;
+    animation: transictionIn 0.5s;
+}
+
+.textFooter {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+.akiraLogo {
+    width: 90px;
+    filter: invert(1);
+    margin: 5px 0px;
+}
+
+.sectionPrincipal article {
+    padding: 60px;
+    font-family: 'Asap', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 15px;
+}
+
+.tituloSection {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 45px;
+}
+
+.subtituloSection {
+    font-family: 'Bebas Neue', cursive;
+    padding-left: 20px;
+    border-bottom: 2px solid #D3D3D3;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.menu ul {
+    background-color: black;
+    padding: 0px;
+    border-left: 6px solid black;
+    border-right: 6px solid black;
+    border-bottom: 6px solid black;
+    border-radius: 0px 0px 10px 10px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: min-content;
+    list-style-type: none;
+    gap: 5px;
+}
+
+.menu ul li {
+    background-color: grey;
+    border-radius: 5px 5px 5px 5px ;
+}
+
+.menu ul li a {
+    padding: 0px 40px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+.menu ul li a:hover {
+    color: black;
+}
+
+.menu ul li:hover {
+    background-color: white;
+}
+
+.menuMobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menuMobile ul {
+    border-left: 6px solid black;
+    border-right: 6px solid black;
+    border-bottom: 6px solid black;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    padding: 5px 15px;
+    background-color: gray;
+    display: none;
+    width: 120px;
+}
+
+.menuMobile ul li {
+    margin-top: 15px;
+}
+
+.menuMobile ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    width: 100%;
+    display: block;
+}
+
+.biografia {
+    font-family: 'Asap', sans-serif;
+}
+
+.biografia p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.buttonForm {
+    margin-top: 15px;
+    display: block;
+}
+
+.imgFrame {
+    width: 55%;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid gray;
+}
+
+.logoHeader {
+    background-color: black;
+}
+
+.frase img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.frase q {
+    font-size: 14px;
+    font-family: 'Asap', sans-serif;
+    font-style: italic;
+    text-align: justify;
+}
+
+.frase h1 {
+    margin-top: 15px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.separador {
+    border-bottom: 2px solid #D3D3D3;
+    margin: 5px 0px 15px 0px;
+}
+
+.publicidad img {
+    width: 100%;
+    height: 430px;
+}
+
+.videoPrincipal {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 472.5px;
+}
+
+/* FUENTE DE NUEVA GALERIA: https://codepen.io/aledebarba/pen/zYGeEVM */
+.gFotogramas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.gFotogramas-item {
+    width: 45%;
+    margin: 5px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.gFotogramas-item-min img {
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gFotogramas-item-min:hover img {
+    width: 100%;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.gFotogramas-item-min:focus+.gFotogramas-item-max {
+    display: block;
+}
+
+.gFotogramas-item-max {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(5, 10, 15, 0.8);
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+}
+
+.gFotogramas-item-max img {
+    max-width: 90vw;
+    position: absolute;
+    box-shadow: 0px 0px 800px 40px rgba(0, 0, 0, 0.9);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn{
+    margin-top: 20px;
+}
+
+#elementoSelect {
+    background-color: white;
+}
+
+#elementoSelect a {
+    color: black;
+}
+
+#separadorMenuMobile {
+    border-bottom: 2px solid #D3D3D3;
+}
+
+/* Se agrega animacion en main y aside para suavizar carga de paginas*/
+@keyframes transictionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 
+- Se ajuste video y header reduciendo el tamaño del logo.
+- Se ajusta el menu del sitio para version table.
+- Se quita publicidad.
+*/
+@media screen and (max-width: 769px) {
+
+    .videoPrincipal {
+        height: 262.5px;
+    }
+
+    #elementoSelect {
+        border-radius: 3px 3px 3px 3px;
+    }
+
+    .akiraLogo {
+        width: 80px;
+    }
+
+    .publicidad {
+        display: none;
+    }
+
+    .separador {
+        display: none;
+    }
+
+    .menu {
+        background-color: black;
+        padding: 0px;
+    }
+
+    .menu ul {
+        width: 100%;
+        justify-content: space-evenly;
+        margin-bottom: 0px;
+    }
+
+}
+
+/* 
+- Se cambia el menu por una version mobile.
+- Se quita el aside de frases y publicidad.
+- Ajustes para visualizar mejor textos, imagenes y videos.
+*/
+@media screen and (max-width: 426px) {
+
+    aside {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menuMobile ul {
+        display: inline-block;
+    }
+
+    .menuMobile ul li {
+        display: none;
+    }
+
+    .menuMobile ul:hover>li {
+        display: block;
+    }
+
+    .videoPrincipal {
+        width: 100%;
+        height: 157.5px;
+    }
+
+    .subtituloSection {
+        border-bottom: 0px;
+    }
+
+    .sectionPrincipal{
+        margin-top: 60px;
+    }
+
+    .sectionPrincipal article {
+        padding: 30px;
+    }
+}
