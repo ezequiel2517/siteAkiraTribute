@@ -1,51 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap&family=Bebas+Neue&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  display: table;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  animation: transictionIn 0.5s;
-  padding-right: 0px !important;
-}
-
-a {
-  text-decoration: none;
-}
-
-header {
-  text-align: center;
-  padding-bottom: 20px;
-  z-index: 1000 !important;
-}
-
-footer {
-  background-color: black;
-  height: 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: auto !important;
-}
-
-form label {
-  display: block;
-  margin-bottom: 5px;
-}
-
 aside {
   padding: 10px;
   display: flex;
@@ -53,43 +6,34 @@ aside {
   justify-content: flex-start;
   font-family: "Asap", sans-serif;
   border-left: 2px solid #D3D3D3;
-  border-top: 2px solidd #D3D3D3;
+  border-top: 2px solid #D3D3D3;
   animation: transictionIn 0.5s;
 }
 
-.textFooter {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-  font-family: "Bebas Neue", cursive;
-  font-size: 20px;
-  text-align: center;
+.frase img {
+  width: 100%;
+  margin-bottom: 10px;
 }
-
-.akiraLogo {
-  width: 90px;
-  filter: invert(1);
-  margin: 5px 0px;
-}
-
-.sectionPrincipal article {
-  padding: 60px;
+.frase q {
+  font-size: 14px;
   font-family: "Asap", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  gap: 15px;
+  font-style: italic;
+  text-align: justify;
+}
+.frase h1 {
+  margin-top: 15px;
+  text-align: right;
+  font-size: 20px;
 }
 
-.tituloSection {
-  font-family: "Bebas Neue", cursive;
-  font-size: 45px;
-}
-
-.subtituloSection {
-  font-family: "Bebas Neue", cursive;
-  padding-left: 20px;
+.separador {
   border-bottom: 2px solid #D3D3D3;
+  margin: 5px 0px 15px 0px;
+}
+
+.publicidad img {
+  width: 100%;
+  height: 430px;
 }
 
 .menu {
@@ -162,12 +106,42 @@ aside {
   display: block;
 }
 
-.biografia {
-  font-family: "Asap", sans-serif;
+#elementoSelect {
+  background-color: white;
 }
-.biografia p {
-  margin-bottom: 20px;
-  text-align: justify;
+#elementoSelect a {
+  color: black;
+}
+
+#separadorMenuMobile {
+  border-bottom: 2px solid #D3D3D3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: table;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  animation: transictionIn 0.5s;
+  padding-right: 0px !important;
+}
+
+a {
+  text-decoration: none;
 }
 
 .buttonForm {
@@ -175,36 +149,25 @@ aside {
   display: block;
 }
 
-.logoHeader {
-  background-color: black;
+.btn {
+  margin-top: 20px;
 }
 
-.frase img {
-  width: 100%;
-  margin-bottom: 10px;
-}
-.frase q {
-  font-size: 14px;
-  font-family: "Asap", sans-serif;
-  font-style: italic;
-  text-align: justify;
-}
-.frase h1 {
-  margin-top: 15px;
-  text-align: right;
-  font-size: 20px;
+form label {
+  display: block;
+  margin-bottom: 5px;
 }
 
-.separador {
-  border-bottom: 2px solid #D3D3D3;
-  margin: 5px 0px 15px 0px;
+@keyframes transictionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
-.publicidad img {
-  width: 100%;
-  height: 430px;
-}
-
 .videoPrincipal {
   display: block;
   margin-left: auto;
@@ -264,32 +227,68 @@ aside {
   transform: translate(-50%, -50%);
 }
 
-.btn {
-  margin-top: 20px;
+.sectionPrincipal article {
+  padding: 60px;
+  font-family: "Asap", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 15px;
 }
 
-#elementoSelect {
-  background-color: white;
-}
-#elementoSelect a {
-  color: black;
+.tituloSection {
+  font-family: "Bebas Neue", cursive;
+  font-size: 45px;
 }
 
-#separadorMenuMobile {
+.subtituloSection {
+  font-family: "Bebas Neue", cursive;
+  padding-left: 20px;
   border-bottom: 2px solid #D3D3D3;
 }
 
-/* Se agrega animacion en main y aside para suavizar carga de paginas*/
-@keyframes transictionIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.biografia {
+  font-family: "Asap", sans-serif;
 }
+.biografia p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+footer {
+  background-color: black;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: auto !important;
+}
+
+.textFooter {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 20px;
+  z-index: 1000 !important;
+}
+
+.logoHeader {
+  background-color: black;
+}
+
+.akiraLogo {
+  width: 90px;
+  filter: invert(1);
+  margin: 5px 0px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .videoPrincipal {
     height: 262.5px;

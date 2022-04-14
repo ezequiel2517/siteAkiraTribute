@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: table;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    animation: transictionIn 0.5s;
+    padding-right: 0px !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.buttonForm {
+    margin-top: 15px;
+    display: block;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+// Se agrega animacion en main y aside para suavizar carga de paginas
+@keyframes transictionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

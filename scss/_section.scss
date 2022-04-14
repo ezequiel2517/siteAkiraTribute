@@ -1,0 +1,30 @@
+.sectionPrincipal {
+    article {
+        padding: 60px;
+        font-family: $font_secundaria;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        gap: 15px;
+    }
+}
+
+.tituloSection {
+    font-family: $font_principal;
+    font-size: 45px;
+}
+
+.subtituloSection {
+    font-family: $font_principal;
+    padding-left: 20px;
+    border-bottom: 2px solid $color_separador;
+}
+
+.biografia {
+    font-family: $font_secundaria;
+
+    p {
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+}
