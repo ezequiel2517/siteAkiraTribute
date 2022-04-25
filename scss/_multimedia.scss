@@ -46,7 +46,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: map-get($colores, color_principal);
+    background-color: map-get($colores, color_transparente);
     overflow: hidden;
     height: 100vh;
     width: 100vw;
