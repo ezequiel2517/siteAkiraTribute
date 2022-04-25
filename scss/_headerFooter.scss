@@ -1,6 +1,6 @@
 
 footer {
-    background-color: $color_principal;
+    background-color: map-get($colores, color_principal);
     height: 60px;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@ footer {
 .textFooter {
     font-size: 20px;
     text-decoration: none;
-    color: $color_secundario;
+    color: map-get($colores, color_secundario);
     font-family: $font_principal;
     font-size: 20px;
     text-align: center;
@@ -25,7 +25,7 @@ header {
 }
 
 .logoHeader {
-    background-color: $color_principal;
+    background-color: map-get($colores, color_principal);
 }
 
 .akiraLogo {

@@ -17,7 +17,7 @@
 .subtituloSection {
     font-family: $font_principal;
     padding-left: 20px;
-    border-bottom: 2px solid $color_separador;
+    border-bottom: 2px solid map-get($colores, color_separador);
 }
 
 .biografia {

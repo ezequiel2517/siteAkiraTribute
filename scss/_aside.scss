@@ -4,8 +4,8 @@ aside {
     flex-direction: column;
     justify-content: flex-start;
     font-family: $font_secundaria;
-    border-left: 2px solid $color_separador;
-    border-top: 2px solid $color_separador;
+    border-left: 2px solid map-get($colores, color_separador);
+    border-top: 2px solid map-get($colores, color_separador);
     animation: transictionIn 0.5s;
 }
 
@@ -30,7 +30,7 @@ aside {
 }
 
 .separador {
-    border-bottom: 2px solid $color_separador;
+    border-bottom: 2px solid map-get($colores, color_separador);
     margin: 5px 0px 15px 0px;
 }
 

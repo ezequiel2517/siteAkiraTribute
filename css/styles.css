@@ -36,6 +36,13 @@ aside {
   height: 430px;
 }
 
+.borderMenu, .menuMobile ul, .menu ul {
+  border-left: 6px solid black;
+  border-right: 6px solid black;
+  border-bottom: 6px solid black;
+  border-radius: 0px 0px 10px 10px;
+}
+
 .menu {
   display: flex;
   flex-direction: row;
@@ -45,10 +52,6 @@ aside {
 .menu ul {
   background-color: black;
   padding: 0px;
-  border-left: 6px solid black;
-  border-right: 6px solid black;
-  border-bottom: 6px solid black;
-  border-radius: 0px 0px 10px 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -81,10 +84,6 @@ aside {
   justify-content: center;
 }
 .menuMobile ul {
-  border-left: 6px solid black;
-  border-right: 6px solid black;
-  border-bottom: 6px solid black;
-  border-radius: 0px 0px 10px 10px;
   position: absolute;
   color: white;
   font-family: "Bebas Neue", cursive;
@@ -176,7 +175,6 @@ form label {
   height: 472.5px;
 }
 
-/* FUENTE DE NUEVA GALERIA: https://codepen.io/aledebarba/pen/zYGeEVM */
 .gFotogramas {
   display: flex;
   flex-wrap: wrap;
