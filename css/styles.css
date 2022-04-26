@@ -225,6 +225,10 @@ form label {
   transform: translate(-50%, -50%);
 }
 
+.imageIndex {
+  width: 400px;
+}
+
 .sectionPrincipal article {
   padding: 60px;
   font-family: "Asap", sans-serif;
