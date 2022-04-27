@@ -12,6 +12,11 @@ $desktop-width: 1024px;
       border-radius: 3px 3px 3px 3px;
     }
 
+    .gFotogramas-item {
+      width: 225px;
+      height: 125px;
+    }
+
     .akiraLogo {
       width: 80px;
     }
@@ -38,6 +43,12 @@ $desktop-width: 1024px;
 
 @mixin mobile {
   @media screen and (max-width: #{$tablet-width - 1px}) {
+
+    .gFotogramas-item {
+      width: 150px;
+      height: 80px;
+    }
+
     aside {
       display: none;
     }
