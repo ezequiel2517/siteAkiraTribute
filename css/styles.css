@@ -219,6 +219,13 @@ form label {
   transform: translate(-50%, -50%);
 }
 
+.card {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 12px;
+}
+
 .sectionPrincipal article {
   padding: 60px;
   font-family: "Asap", sans-serif;
@@ -315,6 +322,10 @@ header {
     justify-content: space-evenly;
     margin-bottom: 0px;
   }
+
+  .card {
+    width: 75%;
+  }
 }
 @media screen and (max-width: 767px) {
   .gFotogramas-item {
@@ -354,6 +365,14 @@ header {
   }
   .sectionPrincipal article {
     padding: 30px;
+  }
+
+  .card {
+    width: 75%;
+  }
+
+  main {
+    font-size: 13px;
   }
 }
 

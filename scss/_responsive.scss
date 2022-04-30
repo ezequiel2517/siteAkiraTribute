@@ -38,6 +38,9 @@ $desktop-width: 1024px;
         margin-bottom: 0px;
       }
     }
+    .card{
+      width: 75%;
+    }
   }
 }
 
@@ -86,6 +89,12 @@ $desktop-width: 1024px;
       article {
         padding: 30px;
       }
+    }
+    .card{
+      width: 75%;
+    }
+    main{
+      font-size: 13px;
     }
   }
 }
