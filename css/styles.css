@@ -359,6 +359,10 @@ header {
   }
 }
 @media screen and (max-width: 767px) {
+  .redes .redes-icon img {
+    height: 60px;
+  }
+
   .gFotogramas-item {
     width: 150px;
     height: 80px;
