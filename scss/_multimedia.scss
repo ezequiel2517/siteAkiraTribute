@@ -56,9 +56,36 @@
     }
 }
 
-.card{
+.card {
     width: 50%;
     margin-right: auto;
     margin-left: auto;
     font-size: 12px;
+}
+
+.redes {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+    margin-bottom: 40px;
+    .redes-icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 30px;
+        img {
+            height: 90px;
+        }
+    }
+    .redes-title{
+        font-family: $font_principal;
+        font-size: 45px;
+        color: map-get($colores, color_principal)
+    }
 }

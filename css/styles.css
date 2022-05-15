@@ -20,7 +20,7 @@ aside {
   font-style: italic;
   text-align: justify;
 }
-.frase h1 {
+.frase .firma {
   margin-top: 15px;
   text-align: right;
   font-size: 20px;
@@ -152,6 +152,11 @@ form label {
   margin-bottom: 5px;
 }
 
+.form-control:focus {
+  border-color: #000000;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+}
+
 .input-group {
   margin-bottom: 20px;
 }
@@ -223,6 +228,33 @@ form label {
   margin-right: auto;
   margin-left: auto;
   font-size: 12px;
+}
+
+.redes {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+.redes .redes-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+.redes .redes-icon img {
+  height: 90px;
+}
+.redes .redes-title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 45px;
+  color: black;
 }
 
 .sectionPrincipal article {
